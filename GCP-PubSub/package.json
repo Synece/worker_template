@@ -1,0 +1,22 @@
+{
+  "name": "worker_template_pubsub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "source .env && npx ts-node index.ts",
+    "build": "esbuild index.ts --outfile=out.js --bundle --platform=node"
+  },
+  "author": "Synece",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/pubsub": "^4.0.6",
+    "@types/node": "^20.8.7",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.5",
+    "nodemailer": "^6.9.13",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {}
+}
