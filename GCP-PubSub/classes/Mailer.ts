@@ -1,9 +1,5 @@
 import * as nodemailer from 'nodemailer';
 
-interface IEmailService {
-    sendMail(mailOptions: nodemailer.SendMailOptions): Promise<nodemailer.SentMessageInfo>;
-}
-
 export class Mailer {
     private transporter: nodemailer.Transporter;
 
